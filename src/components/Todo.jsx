@@ -31,9 +31,11 @@ function Todo ({todo, büşra, onUpdateTodo}) {
     <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between', border:'1px solid lightgrey', padding:'10px', marginTop:'10px' }}>
         <div>
             {
-                 editTable ? <input value={newTodo} onChange={(e) => setNewTodo(e.target.value)}
-                 style={{ width:'380px' }} 
-                 className='todo-input' type='text'/> : content
+                editTable ? 
+                <input value={newTodo} onChange={(e) => setNewTodo(e.target.value)}
+                style={{ width:'380px' }} 
+                className='todo-input' type='text'/> 
+                : content
             }
            
         </div>
